@@ -1,0 +1,553 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": null,
+      "kind": null,
+      "metadata": {
+        "annotations": null,
+        "clusterName": null,
+        "creationTimestamp": {
+          "hourOfDay": 22,
+          "minuteOfHour": 14,
+          "secondOfMinute": 25,
+          "millisOfSecond": 0,
+          "centuryOfEra": 20,
+          "yearOfEra": 2019,
+          "yearOfCentury": 19,
+          "weekyear": 2019,
+          "monthOfYear": 9,
+          "weekOfWeekyear": 37,
+          "millisOfDay": 80065000,
+          "secondOfDay": 80065,
+          "minuteOfDay": 1334,
+          "dayOfWeek": 3,
+          "era": 1,
+          "dayOfYear": 254,
+          "year": 2019,
+          "dayOfMonth": 11,
+          "chronology": {
+            "zone": {
+              "uncachedZone": {
+                "cachable": true,
+                "fixed": false,
+                "id": "Asia/Kolkata"
+              },
+              "fixed": false,
+              "id": "Asia/Kolkata"
+            }
+          },
+          "zone": {
+            "uncachedZone": {
+              "cachable": true,
+              "fixed": false,
+              "id": "Asia/Kolkata"
+            },
+            "fixed": false,
+            "id": "Asia/Kolkata"
+          },
+          "millis": 1568220265000,
+          "afterNow": false,
+          "beforeNow": true,
+          "equalNow": false
+        },
+        "deletionGracePeriodSeconds": null,
+        "deletionTimestamp": null,
+        "finalizers": null,
+        "generateName": "hello-world-5d95fc58b-",
+        "generation": null,
+        "initializers": null,
+        "labels": {
+          "app": "hello-world",
+          "pod-template-hash": "5d95fc58b"
+        },
+        "name": "hello-world-5d95fc58b-4nfmk",
+        "namespace": "84798-ism1-dev",
+        "ownerReferences": [
+          {
+            "apiVersion": "apps/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "ReplicaSet",
+            "name": "hello-world-5d95fc58b",
+            "uid": "69ca1f07-d4b3-11e9-a150-8c1645bc978c"
+          }
+        ],
+        "resourceVersion": "7310",
+        "selfLink": "/api/v1/namespaces/84798-ism1-dev/pods/hello-world-5d95fc58b-4nfmk",
+        "uid": "69cb16fd-d4b3-11e9-a150-8c1645bc978c"
+      },
+      "spec": {
+        "activeDeadlineSeconds": null,
+        "affinity": null,
+        "automountServiceAccountToken": null,
+        "containers": [
+          {
+            "args": null,
+            "command": null,
+            "env": null,
+            "envFrom": null,
+            "image": "arungupta/helloworld-spring-boot:latest",
+            "imagePullPolicy": "Always",
+            "lifecycle": null,
+            "livenessProbe": null,
+            "name": "hello-world-pod",
+            "ports": [
+              {
+                "containerPort": 80,
+                "hostIP": null,
+                "hostPort": null,
+                "name": null,
+                "protocol": "TCP"
+              },
+              {
+                "containerPort": 443,
+                "hostIP": null,
+                "hostPort": null,
+                "name": null,
+                "protocol": "TCP"
+              }
+            ],
+            "readinessProbe": null,
+            "resources": {
+              "limits": null,
+              "requests": null
+            },
+            "securityContext": null,
+            "stdin": null,
+            "stdinOnce": null,
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "tty": null,
+            "volumeDevices": null,
+            "volumeMounts": [
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "mountPropagation": null,
+                "name": "default-token-r4h7f",
+                "readOnly": true,
+                "subPath": null
+              }
+            ],
+            "workingDir": null
+          }
+        ],
+        "dnsConfig": null,
+        "dnsPolicy": "ClusterFirst",
+        "hostAliases": null,
+        "hostIPC": null,
+        "hostNetwork": null,
+        "hostPID": null,
+        "hostname": null,
+        "imagePullSecrets": null,
+        "initContainers": null,
+        "nodeName": "pop-os",
+        "nodeSelector": null,
+        "priority": 0,
+        "priorityClassName": null,
+        "readinessGates": null,
+        "restartPolicy": "Always",
+        "runtimeClassName": null,
+        "schedulerName": "default-scheduler",
+        "securityContext": {
+          "fsGroup": null,
+          "runAsGroup": null,
+          "runAsNonRoot": null,
+          "runAsUser": null,
+          "seLinuxOptions": null,
+          "supplementalGroups": null,
+          "sysctls": null
+        },
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "shareProcessNamespace": null,
+        "subdomain": null,
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/not-ready",
+            "operator": "Exists",
+            "tolerationSeconds": 300,
+            "value": null
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/unreachable",
+            "operator": "Exists",
+            "tolerationSeconds": 300,
+            "value": null
+          }
+        ],
+        "volumes": [
+          {
+            "awsElasticBlockStore": null,
+            "azureDisk": null,
+            "azureFile": null,
+            "cephfs": null,
+            "cinder": null,
+            "configMap": null,
+            "downwardAPI": null,
+            "emptyDir": null,
+            "fc": null,
+            "flexVolume": null,
+            "flocker": null,
+            "gcePersistentDisk": null,
+            "gitRepo": null,
+            "glusterfs": null,
+            "hostPath": null,
+            "iscsi": null,
+            "name": "default-token-r4h7f",
+            "nfs": null,
+            "persistentVolumeClaim": null,
+            "photonPersistentDisk": null,
+            "portworxVolume": null,
+            "projected": null,
+            "quobyte": null,
+            "rbd": null,
+            "scaleIO": null,
+            "secret": {
+              "defaultMode": 420,
+              "items": null,
+              "optional": null,
+              "secretName": "default-token-r4h7f"
+            },
+            "storageos": null,
+            "vsphereVolume": null
+          }
+        ]
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": {
+              "hourOfDay": 22,
+              "minuteOfHour": 14,
+              "secondOfMinute": 25,
+              "millisOfSecond": 0,
+              "centuryOfEra": 20,
+              "yearOfEra": 2019,
+              "yearOfCentury": 19,
+              "weekyear": 2019,
+              "monthOfYear": 9,
+              "weekOfWeekyear": 37,
+              "millisOfDay": 80065000,
+              "secondOfDay": 80065,
+              "minuteOfDay": 1334,
+              "dayOfWeek": 3,
+              "era": 1,
+              "dayOfYear": 254,
+              "year": 2019,
+              "dayOfMonth": 11,
+              "chronology": {
+                "zone": {
+                  "uncachedZone": {
+                    "cachable": true,
+                    "fixed": false,
+                    "id": "Asia/Kolkata"
+                  },
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                }
+              },
+              "zone": {
+                "uncachedZone": {
+                  "cachable": true,
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                },
+                "fixed": false,
+                "id": "Asia/Kolkata"
+              },
+              "millis": 1568220265000,
+              "afterNow": false,
+              "beforeNow": true,
+              "equalNow": false
+            },
+            "message": null,
+            "reason": null,
+            "status": "True",
+            "type": "Initialized"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": {
+              "hourOfDay": 22,
+              "minuteOfHour": 16,
+              "secondOfMinute": 30,
+              "millisOfSecond": 0,
+              "centuryOfEra": 20,
+              "yearOfEra": 2019,
+              "yearOfCentury": 19,
+              "weekyear": 2019,
+              "monthOfYear": 9,
+              "weekOfWeekyear": 37,
+              "millisOfDay": 80190000,
+              "secondOfDay": 80190,
+              "minuteOfDay": 1336,
+              "dayOfWeek": 3,
+              "era": 1,
+              "dayOfYear": 254,
+              "year": 2019,
+              "dayOfMonth": 11,
+              "chronology": {
+                "zone": {
+                  "uncachedZone": {
+                    "cachable": true,
+                    "fixed": false,
+                    "id": "Asia/Kolkata"
+                  },
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                }
+              },
+              "zone": {
+                "uncachedZone": {
+                  "cachable": true,
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                },
+                "fixed": false,
+                "id": "Asia/Kolkata"
+              },
+              "millis": 1568220390000,
+              "afterNow": false,
+              "beforeNow": true,
+              "equalNow": false
+            },
+            "message": null,
+            "reason": null,
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": {
+              "hourOfDay": 22,
+              "minuteOfHour": 16,
+              "secondOfMinute": 30,
+              "millisOfSecond": 0,
+              "centuryOfEra": 20,
+              "yearOfEra": 2019,
+              "yearOfCentury": 19,
+              "weekyear": 2019,
+              "monthOfYear": 9,
+              "weekOfWeekyear": 37,
+              "millisOfDay": 80190000,
+              "secondOfDay": 80190,
+              "minuteOfDay": 1336,
+              "dayOfWeek": 3,
+              "era": 1,
+              "dayOfYear": 254,
+              "year": 2019,
+              "dayOfMonth": 11,
+              "chronology": {
+                "zone": {
+                  "uncachedZone": {
+                    "cachable": true,
+                    "fixed": false,
+                    "id": "Asia/Kolkata"
+                  },
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                }
+              },
+              "zone": {
+                "uncachedZone": {
+                  "cachable": true,
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                },
+                "fixed": false,
+                "id": "Asia/Kolkata"
+              },
+              "millis": 1568220390000,
+              "afterNow": false,
+              "beforeNow": true,
+              "equalNow": false
+            },
+            "message": null,
+            "reason": null,
+            "status": "True",
+            "type": "ContainersReady"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": {
+              "hourOfDay": 22,
+              "minuteOfHour": 14,
+              "secondOfMinute": 25,
+              "millisOfSecond": 0,
+              "centuryOfEra": 20,
+              "yearOfEra": 2019,
+              "yearOfCentury": 19,
+              "weekyear": 2019,
+              "monthOfYear": 9,
+              "weekOfWeekyear": 37,
+              "millisOfDay": 80065000,
+              "secondOfDay": 80065,
+              "minuteOfDay": 1334,
+              "dayOfWeek": 3,
+              "era": 1,
+              "dayOfYear": 254,
+              "year": 2019,
+              "dayOfMonth": 11,
+              "chronology": {
+                "zone": {
+                  "uncachedZone": {
+                    "cachable": true,
+                    "fixed": false,
+                    "id": "Asia/Kolkata"
+                  },
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                }
+              },
+              "zone": {
+                "uncachedZone": {
+                  "cachable": true,
+                  "fixed": false,
+                  "id": "Asia/Kolkata"
+                },
+                "fixed": false,
+                "id": "Asia/Kolkata"
+              },
+              "millis": 1568220265000,
+              "afterNow": false,
+              "beforeNow": true,
+              "equalNow": false
+            },
+            "message": null,
+            "reason": null,
+            "status": "True",
+            "type": "PodScheduled"
+          }
+        ],
+        "containerStatuses": [
+          {
+            "containerID": "containerd://4ab5107fda8bf2c5f1a9b5ddfad51eed23333ec8116b941dce43f3b98e654764",
+            "image": "docker.io/arungupta/helloworld-spring-boot:latest",
+            "imageID": "docker.io/arungupta/helloworld-spring-boot@sha256:bf058e8a5b4967e04881a80d72a27782b006196c0bf58710933096bef99e4efb",
+            "lastState": {
+              "running": null,
+              "terminated": null,
+              "waiting": null
+            },
+            "name": "hello-world-pod",
+            "ready": true,
+            "restartCount": 0,
+            "state": {
+              "running": {
+                "startedAt": {
+                  "hourOfDay": 22,
+                  "minuteOfHour": 16,
+                  "secondOfMinute": 29,
+                  "millisOfSecond": 0,
+                  "centuryOfEra": 20,
+                  "yearOfEra": 2019,
+                  "yearOfCentury": 19,
+                  "weekyear": 2019,
+                  "monthOfYear": 9,
+                  "weekOfWeekyear": 37,
+                  "millisOfDay": 80189000,
+                  "secondOfDay": 80189,
+                  "minuteOfDay": 1336,
+                  "dayOfWeek": 3,
+                  "era": 1,
+                  "dayOfYear": 254,
+                  "year": 2019,
+                  "dayOfMonth": 11,
+                  "chronology": {
+                    "zone": {
+                      "uncachedZone": {
+                        "cachable": true,
+                        "fixed": false,
+                        "id": "Asia/Kolkata"
+                      },
+                      "fixed": false,
+                      "id": "Asia/Kolkata"
+                    }
+                  },
+                  "zone": {
+                    "uncachedZone": {
+                      "cachable": true,
+                      "fixed": false,
+                      "id": "Asia/Kolkata"
+                    },
+                    "fixed": false,
+                    "id": "Asia/Kolkata"
+                  },
+                  "millis": 1568220389000,
+                  "afterNow": false,
+                  "beforeNow": true,
+                  "equalNow": false
+                }
+              },
+              "terminated": null,
+              "waiting": null
+            }
+          }
+        ],
+        "hostIP": "192.168.1.4",
+        "initContainerStatuses": null,
+        "message": null,
+        "nominatedNodeName": null,
+        "phase": "Running",
+        "podIP": "10.1.1.10",
+        "qosClass": "BestEffort",
+        "reason": null,
+        "startTime": {
+          "hourOfDay": 22,
+          "minuteOfHour": 14,
+          "secondOfMinute": 25,
+          "millisOfSecond": 0,
+          "centuryOfEra": 20,
+          "yearOfEra": 2019,
+          "yearOfCentury": 19,
+          "weekyear": 2019,
+          "monthOfYear": 9,
+          "weekOfWeekyear": 37,
+          "millisOfDay": 80065000,
+          "secondOfDay": 80065,
+          "minuteOfDay": 1334,
+          "dayOfWeek": 3,
+          "era": 1,
+          "dayOfYear": 254,
+          "year": 2019,
+          "dayOfMonth": 11,
+          "chronology": {
+            "zone": {
+              "uncachedZone": {
+                "cachable": true,
+                "fixed": false,
+                "id": "Asia/Kolkata"
+              },
+              "fixed": false,
+              "id": "Asia/Kolkata"
+            }
+          },
+          "zone": {
+            "uncachedZone": {
+              "cachable": true,
+              "fixed": false,
+              "id": "Asia/Kolkata"
+            },
+            "fixed": false,
+            "id": "Asia/Kolkata"
+          },
+          "millis": 1568220265000,
+          "afterNow": false,
+          "beforeNow": true,
+          "equalNow": false
+        }
+      }
+    }
+  ],
+  "kind": "PodList",
+  "metadata": {
+    "resourceVersion": "7337",
+    "selfLink": "/api/v1/namespaces/84798-ism1-dev/pods",
+    "continue": null
+  }
+}

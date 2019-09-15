@@ -1,0 +1,18 @@
+<div *ngIf="data?.item">
+  <h1 mat-dialog-title>Scale {{data.item.metadata.name}}</h1>
+  <div mat-dialog-content>
+    <span>
+      Resource {{data.item.metadata.name}} will be updated to reflect the desired count<br>
+      Current status: {{data.item.status.readyReplicas}} created, {{data.item.status.replicas}} desired.
+    </span>
+    <form class="scale-form" style="margin-top: 30px;">
+      <mat-form-field>
+        <input [(ngModel)]="numberOfDesiredReplicas" matInput placeholder="No. of Replicas" name="numberOfReplicas" type="number">
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions align="end">
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button cdkFocusInitial (click)="onScale()">Ok</button>
+  </div>
+</div>

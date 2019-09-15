@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>Kubernetes Dashboard</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+
+  <mat-form-field style="font-size: 14px; margin-top: 12px;">
+    <mat-label>Namespace</mat-label>
+    <mat-select [(value)]="selectedNamespace" (selectionChange)="onNamespaceSelected()">
+      <mat-option *ngFor="let food of namespaces" [value]="food">
+        {{food}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-toolbar>
+<app-dashboard [deploymentResponse]="deploymentResponse"></app-dashboard>
